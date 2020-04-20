@@ -11,38 +11,38 @@ class TestCredential(unittest.TestCase):
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
 
-#     def setUp(self):
-#         '''
-#         Set up method to run before each test cases.
-#         '''
-#         self.new_credential = Credential(
-#             "Ian", "Adika", "123ABC", "adika19ian@gmail.com")  # create contact object
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_credential = Credential(
+            "Ian", "Adika", "123ABC", "adika19ian@gmail.com")  # create contact object
 
-#     def test_init(self):
-#         '''
-#         test_init test case to test if the object is initialized properly
-#         '''
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
 
-#         self.assertEqual(self.new_credential.credential_name, "Ian")
-#         self.assertEqual(self.new_credential.user_name, "Adika")
-#         self.assertEqual(self.new_credential.password, "123ABC")
-#         self.assertEqual(self.new_credential.email, "adika19ian@gmail.com")
+        self.assertEqual(self.new_credential.credential_name, "Ian")
+        self.assertEqual(self.new_credential.user_name, "Adika")
+        self.assertEqual(self.new_credential.password, "123ABC")
+        self.assertEqual(self.new_credential.email, "adika19ian@gmail.com")
 
-#     def test_save_credential(self):
-#         '''
-#         test_save_contact test case to test if the contact object is saved into
-#          the contact list
-#         '''
-#         self.new_credential.save_credential()  # saving the new contact
-#         self.assertEqual(len(Credential.credential_list), 1)
+    # def test_save_credential(self):
+    #     '''
+    #     test_save_contact test case to test if the contact object is saved into
+    #      the contact list
+    #     '''
+    #     self.new_credential.save_credential()  # saving the new contact
+    #     self.assertEqual(len(Credential.credential_list), 1)
 
-#     def tearDown(self):
-#         '''
-#         tearDown method that does clean up after each test case has run.
-#         '''
-#         Credential.credential_list = []
+    # def tearDown(self):
+    #     '''
+    #     tearDown method that does clean up after each test case has run.
+    #     '''
+    #     Credential.credential_list = []
 
-#     def test_save_multiple_credential(self):
+    # def test_save_multiple_credential(self):
 #         '''
 #         test_save_multiple_contact to check if we can save multiple contact
 #         objects to our contact_list
@@ -112,5 +112,5 @@ class TestCredential(unittest.TestCase):
 #     #     self.assertEqual(self.new_credential.email, pyperclip.paste())
     
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
