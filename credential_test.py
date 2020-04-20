@@ -53,17 +53,17 @@ class TestCredential(unittest.TestCase):
         test_credential.save_credential()
         self.assertEqual(len(Credential.credential_list), 2)
 
-#     def test_delete_credential(self):
-#         '''
-#         test_delete_contact to test if we can remove a contact from our contact list
-#         '''
-#         self.new_credential.save_credential()
-#         test_credential = Credential(
-#             "Test", "user", "123ABC", "adika19ian@gmail.com")  # new contact
-#         test_credential.save_credential()
+    def test_delete_credential(self):
+        '''
+        test_delete_contact to test if we can remove a contact from our contact list
+        '''
+        self.new_credential.save_credential()
+        test_credential = Credential(
+            "Test", "user", "123ABC", "adika19ian@gmail.com")  # new contact
+        test_credential.save_credential()
 
-#         self.new_credential.delete_credential()  # Deleting a contact object
-#         self.assertEqual(len(Credential.credential_list), 1)
+        self.new_credential.delete_credential()  # Deleting a contact object
+        self.assertEqual(len(Credential.credential_list), 1)
 
 #     def test_find_credential_by_name(self):
 #         '''
