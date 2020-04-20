@@ -28,13 +28,13 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_credential.password, "123ABC")
         self.assertEqual(self.new_credential.email, "adika19ian@gmail.com")
 
-    # def test_save_credential(self):
-    #     '''
-    #     test_save_contact test case to test if the contact object is saved into
-    #      the contact list
-    #     '''
-    #     self.new_credential.save_credential()  # saving the new contact
-    #     self.assertEqual(len(Credential.credential_list), 1)
+    def test_save_credential(self):
+        '''
+        test_save_credential test case to test if the credential object is saved into
+         the contact list
+        '''
+        self.new_credential.save_credential()  # saving the new credential
+        self.assertEqual(len(Credential.credential_list), 1)
 
     # def tearDown(self):
     #     '''

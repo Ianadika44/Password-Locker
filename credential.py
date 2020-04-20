@@ -16,12 +16,12 @@ class Credential:
         self.email = email
 
         # Init method up here
-    # def save_credential(self):
-    #     '''
-    #     save_contact method saves contact objects into contact_list
-    #     '''
+    def save_credential(self):
+        '''
+        save_contact method saves contact objects into contact_list
+        '''
 
-    #     Credential.credential_list.append(self)
+        Credential.credential_list.append(self)
 
     # def delete_credential(self):
     #     '''
