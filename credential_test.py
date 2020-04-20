@@ -42,16 +42,16 @@ class TestCredential(unittest.TestCase):
     #     '''
     #     Credential.credential_list = []
 
-    # def test_save_multiple_credential(self):
-#         '''
-#         test_save_multiple_contact to check if we can save multiple contact
-#         objects to our contact_list
-#         '''
-#         self.new_credential.save_credential()
-#         test_credential = Credential("Test", "user", "123ABC",
-#                                      "adika19ian@gmail.com")  # new contact
-#         test_credential.save_credential()
-#         self.assertEqual(len(Credential.credential_list), 2)
+    def test_save_multiple_credential(self):
+        '''
+        test_save_multiple_contact to check if we can save multiple contact
+        objects to our contact_list
+        '''
+        self.new_credential.save_credential()
+        test_credential = Credential("Test", "user", "123ABC",
+                                     "adika19ian@gmail.com")  # new contact
+        test_credential.save_credential()
+        self.assertEqual(len(Credential.credential_list), 2)
 
 #     def test_delete_credential(self):
 #         '''

@@ -18,17 +18,17 @@ class Credential:
         # Init method up here
     def save_credential(self):
         '''
-        save_contact method saves contact objects into contact_list
+        save_credential method saves credential objects into credential_list
         '''
 
         Credential.credential_list.append(self)
 
-    # def delete_credential(self):
-    #     '''
-    #     delete_contact method deletes a saved contact from the contact_list
-    #     '''
+    def delete_credential(self):
+        '''
+        delete_contact method deletes a saved contact from the contact_list
+        '''
 
-    #     Credential.credential_list.remove(self)
+        Credential.credential_list.remove(self)
 
     # @classmethod
     # def find_by_name(cls, name):
