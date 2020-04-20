@@ -93,24 +93,6 @@ class TestCredential(unittest.TestCase):
 
         self.assertTrue(credential_exists)
 
-#     def test_display_all_credentials(self):
-#         '''
-#         method that returns a list of all contacts saved
-#         '''
-
-#         self.assertEqual(Credential.display_credentials(),
-#                          Credential.credential_list)
-
-#     # def test_copy_email(self):
-#     #     '''
-#     #     Test to confirm that we are copying the email address from a found contact
-#     #     '''
-
-#     #     self.new_credential.save_credential()
-#     #     Credential.copy_email("email")
-
-#     #     self.assertEqual(self.new_credential.email, pyperclip.paste())
-    
 
 if __name__ == '__main__':
     unittest.main()
