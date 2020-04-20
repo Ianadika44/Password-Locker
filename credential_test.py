@@ -79,19 +79,19 @@ class TestCredential(unittest.TestCase):
 
         self.assertEqual(found_credential.email, test_credential.email)
 
-#     def test_credential_exists(self):
-#         '''
-#         test to check if we can return a Boolean  if we cannot find the contact.
-#         '''
+    def test_credential_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the contact.
+        '''
 
-#         self.new_credential.save_credential()
-#         test_credential = Credential(
-#             "Test", "user", "123ABC", "adika19ian@gmail.com")  # new contact
-#         test_credential.save_credential()
+        self.new_credential.save_credential()
+        test_credential = Credential(
+            "Test", "user", "123ABC", "adika19ian@gmail.com")  # new contact
+        test_credential.save_credential()
 
-#         credential_exists = Credential.credential_exist("123ABC")
+        credential_exists = Credential.credential_exist("123ABC")
 
-#         self.assertTrue(credential_exists)
+        self.assertTrue(credential_exists)
 
 #     def test_display_all_credentials(self):
 #         '''
