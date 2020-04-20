@@ -30,20 +30,20 @@ class Credential:
 
         Credential.credential_list.remove(self)
 
-    # @classmethod
-    # def find_by_name(cls, name):
-    #     '''
-    #     Method that takes in a number and returns a contact that matches that number.
+    @classmethod
+    def find_by_name(cls, name):
+        '''
+        Method that takes in a number and returns a contact that matches that number.
 
-    #     Args:
-    #         number: Phone number to search for
-    #     Returns :
-    #         Contact of person that matches the number.
-    #     '''
+        Args:
+            number: Phone number to search for
+        Returns :
+            Contact of person that matches the number.
+        '''
 
-    #     for credential in cls.credential_list:
-    #         if credential.credential_name == name:
-    #             return credential
+        for credential in cls.credential_list:
+            if credential.credential_name == name:
+                return credential
 
     # @classmethod
     # def credential_exist(cls, name):
