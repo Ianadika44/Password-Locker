@@ -54,7 +54,7 @@ def main():
     print('\n')
 
     while True:
-        print("Use these short codes : cc - create a new user, dc - display users, fc -find a user, ex -exit the account ")
+        print("Use these short codes : cc - create a new user, dc - display users, fc -find a user, ex -exit the account,I ")
 
         short_code = input().lower()
 
@@ -86,6 +86,9 @@ def main():
             print(
                 f"You can now login to your {f_name} account using your password.")
             print('\n')
+            
+            
+            
 
         elif short_code == 'dc':
 
@@ -95,7 +98,7 @@ def main():
 
                 for user in display_user():
                     print(
-                        f"{user.first_name} {user.last_name} .....{user.password}")
+                        f"{user.account_name} {user.user_name} .....{user.password}")
 
                 print('\n')
             else:
