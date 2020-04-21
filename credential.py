@@ -60,12 +60,12 @@ class Credential:
 
             return False
 
-    # @classmethod
-    # def display_credentials(cls):
-    #     '''
-    #     method that returns the contact list
-    #     '''
-    #     return cls.credential_list
+    @classmethod
+    def display_credentials(cls):
+        '''
+        method that returns the contact list
+        '''
+        return cls.credential_list
     
     # @classmethod
     # def copy_email(cls,name):
