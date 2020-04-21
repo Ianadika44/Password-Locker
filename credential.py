@@ -25,7 +25,7 @@ class Credential:
 
     def delete_credential(self):
         '''
-        delete_contact method deletes a saved contact from the contact_list
+        delete_credential method deletes a saved contact from the credential_list
         '''
 
         Credential.credential_list.remove(self)
@@ -33,10 +33,10 @@ class Credential:
     @classmethod
     def find_by_name(cls, name):
         '''
-        Method that takes in a number and returns a contact that matches that number.
+        Method that takes in a user name and returns a credential that matches that name.
 
         Args:
-            number: Phone number to search for
+            name: user name to search for
         Returns :
             Contact of person that matches the number.
         '''
@@ -48,11 +48,11 @@ class Credential:
     @classmethod
     def credential_exist(cls, name):
         '''
-          Method that checks if a contact exists from the contact list.
+          Method that checks if a credential exists from the credential list.
         Args:
-              number: Phone number to search if it exists
+              name: user to search if it exists
         Returns :
-              Boolean: True or false depending if the contact exists
+              Boolean: True or false depending if the user exists
         '''
         for credential in cls.credential_list:
             if credential.password == name:
@@ -63,12 +63,6 @@ class Credential:
     @classmethod
     def display_credentials(cls):
         '''
-        method that returns the contact list
+        method that returns the credential list
         '''
         return cls.credential_list
-    
-    # @classmethod
-    # def copy_email(cls,name):
-    #     credential_found = Credential.find_by_name(name)
-    #     pyperclip.copy(credential_found.email)
-   
