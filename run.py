@@ -87,9 +87,6 @@ def main():
                 f"You can now login to your {f_name} account using your password.")
             print('\n')
             
-            
-            
-
         elif short_code == 'dc':
 
             if display_user():
@@ -113,11 +110,11 @@ def main():
             search_user = input()
             if check_existing_users(search_user):
                 search_user = find_user(search_user)
-                print(f"{search_user.f_name} {search_user.l_name}")
+                print(f"search_user{f_name} {l_name}")
                 print('-' * 20)
 
-                print(f"Password.......{search_user.password}")
-                print(f"Email address.......{search_user.email}")
+                print(f"search_user.......{password}")
+                print(f"search_user.......{email}")
             else:
                 print("That user does not exist")
 
